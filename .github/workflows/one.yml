@@ -6,4 +6,4 @@ jobs:
     steps:
       - id: step-zero
         run: |
-          echo "Hello World!"
+          echo "Hello World! $(date)"

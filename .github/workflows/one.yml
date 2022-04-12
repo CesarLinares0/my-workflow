@@ -1,14 +1,9 @@
-name: Primer Workflow
+name: Workflow zero
 on: [push]
 jobs:
   build:
-    name: Hola Mundo
     runs-on: ubuntu-latest
     steps:
-      - id: firstStep
-        name: Hello world
-        uses: actions/hello-world-javascript-action@v1
-        with:
-        who-to-greet: 'World'
-      - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.firstStep.outputs.time }}.'
+      - id: step-zero
+        run: |
+          echo "Hello World! $(date)"

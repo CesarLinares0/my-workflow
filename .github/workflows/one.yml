@@ -1,7 +1,13 @@
-name: Workflows
+name: Two Workflow
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Iniciando..."
+      - name: Hello John
+        id: hello
+        uses: cesarlinares0/my-action-docker@v1.0.0
+        with:
+          FIRST_NAME: 'John Doe'
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"

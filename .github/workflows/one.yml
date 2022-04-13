@@ -1,9 +1,7 @@
-name: Workflow zero
+name: Workflows
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - id: step-zero
-        run: |
-          echo "Hello World! $(date)"
+      - run: echo "Iniciando..."

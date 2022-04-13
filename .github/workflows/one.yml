@@ -6,8 +6,11 @@ jobs:
     steps:
       - name: Hello John
         id: hello
-        uses: cesarlinares0/my-action-docker@v1.0.1
+        uses: cesarlinares0/my-action-docker@v1.0.2
         with:
           FIRST_NAME: 'John Doe'
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Action nodejs
+        id: nodejs
+        uses: cesarlinares0/my-action-nodejs@v1.0.1

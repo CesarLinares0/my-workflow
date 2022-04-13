@@ -13,4 +13,4 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       - name: Action nodejs
         id: nodejs
-        uses: cesarlinares0/my-action-nodejs@v1.0.1
+        uses: cesarlinares0/my-action-nodejs@v1.1.0

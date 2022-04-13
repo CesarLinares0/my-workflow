@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Hello John
         id: hello
-        uses: CesarLinares0/my-action-docker@v1.0.0
+        uses: cesarlinares0/my-action-docker@v1.0.1
         with:
           FIRST_NAME: 'John Doe'
       - name: Get the output time
